@@ -26,22 +26,23 @@
 
 function drawXYZ(high) {
   // Your Code Here
-  for(let i = 1; i <= high; i++) {
-    let output ="";
-    for (let j= i; j < i + high; j++) {
-      if (j % 3 == 0) {
-        output +="X"
-      } else if (j % 2 == 0) {
-        output +="Z"
-      } else {
-        output +="Y"
+  let print = ""
+    for (let i = 1; i <= high*high; i++){
+        let str = ""
+        if (i%3==0) {
+            str += "X "
+        } else {
+            if (i%2==0) {
+                str += "Z "
+            } else { 
+                str += "Y "
+            }
+          }
+        if (i%high==0) str += "\n"
+        print += str
       }
-    }
-    console.log(output);
-    output = "";
-
+      console.log(print);
   }
-}
 
 drawXYZ(3);
 drawXYZ(5);
