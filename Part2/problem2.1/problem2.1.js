@@ -1,17 +1,17 @@
 // input
-let input1 = 6;
-let input2 = 20;
+// let input1 = 6;
+// let input2 = 20;
 
 // Your Code Here
-console.log(`input: ${input1}\noutput:`);
-for(let i=1; i<=input1; i++){
-    if(input1%i==0){
-        console.log(i);
+function test(input) {
+  console.log(`input: ${input}\noutput:`);
+  for (let j = 1; j <= input; j++) {
+    if (input % j == 0) {
+      console.log(j);
     }
+  }
 }
-console.log(`input: ${input2}\noutput:`);
-for(let j=1; j<=input2; j++){
-    if(input2%j==0){
-        console.log(j);
-    }
-}
+// console.log(test(6));
+// console.log(test(20));
+
+module.exports = test;
