@@ -1,6 +1,6 @@
 function ubahHuruf(sentence) {
   // Your Code Here
-  let crypt = '';
+  let crypt = "";
   for (let i = 0; i < sentence.length; i++) {
     let char = sentence.charCodeAt(i);
     if (char >= 97 && char <= 122) {
@@ -14,8 +14,9 @@ function ubahHuruf(sentence) {
   return crypt;
 }
 
-console.log(ubahHuruf("SEPULSA OKE"));
-console.log(ubahHuruf("ALTERRA ACADEMY"));
-console.log(ubahHuruf("INDONESIA"));
-console.log(ubahHuruf("GOLANG"));
-console.log(ubahHuruf("PROGRAMMER"));
+// console.log(ubahHuruf("SEPULSA OKE"));//COZEVCK YUO
+// console.log(ubahHuruf("ALTERRA ACADEMY"));//KVDOBBK KMKNOWI
+// console.log(ubahHuruf("INDONESIA"));//SXNYXOCSK
+// console.log(ubahHuruf("GOLANG"));//QYVKXQ
+// console.log(ubahHuruf("PROGRAMMER"));//ZBYQBKWWOB
+module.exports = ubahHuruf;
